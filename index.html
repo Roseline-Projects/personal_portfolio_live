@@ -1,142 +1,132 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
 </head>
+
 <body>
-  <div class="container">
-    <header class="header">
-        <div class="header-text-section">
-            <h2>Hello, I'm</h2>
-            <h1>Skyler Hall</h1>
-            <h2>Web Development | AI/ML | Class of 2025</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore deleniti minima 
-                libero odit ipsum cum beatae id nam modi error delectus architecto obcaecati facere ex ullam, placeat 
-                illum ducimus provident.</p>
-        </div>
-        <div class="header-image-section">
-            <img class="header-image" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img" width="500px">
-        </div>
-    </header>
-
-    <section class="skills-section">
-        <div class="skills-title">Skills</div>
-        <div class="skills-card">
-            <p>Html, CSS, Javascript</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="carousel">
-            <button>&#8592;</button>
-            <div class="projects">
-
-                <div class="projects-card">
-                    <img src="" alt="An image" class="project-image">
-                    <h3 class="project-title">A Project</h3>
-                    <p class="project-text">Some Random Text for Now</p>
-                    <a class="project-link">Link</a>
-                </div>
-
+    <div class="container">
+        <header class="header">
+            <div class="header-text-section"> <!--Info-->
+                <h2>Hello, I'm</h2>
+                <h1>Skyler Hall</h1>
+                <h2>Web Development | AI/ML | Class of 2025</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae distinctio ab inventore error. Excepturi, nisi facilis laborum, labore minus blanditiis maxime ratione voluptatibus praesentium tempore cupiditate aliquam ipsum soluta sint!</p>
             </div>
-            <button>&#8594;</button>
-        </div>
-    </section>
+            <div class="header-image-section"> <!--Pfp-->
+                <img class="header-image" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="500px"/>
+            </div>
+        </header>
+        
 
-    <section>
-        <div>Experiences</div>
-        <div>
+        <section class="skills-section">
+            <div class="skills-title">Skills</div>
+            <div class="skills-card">
+                <p>HTML, CSS, Javascript, React</p>
+            </div>
+        </section>
 
-            <div>
-                <div>
+        <section class="projects-section">
+             <h2>Projects</h2>
+             <div class="carousel" id="carousel">
+                <button id="back">&#8592;</button>
+                <div class="projects" id="projects">
+                    <!--Intentionally empty-->
+
+                    <div class="project-card">
+                        <img class="project-image" src="https://images.unsplash.com/photo-1573867639040-6dd25fa5f597?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="An image"/>
+                        <h3 class="project-title">A Project</h3>
+                        <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p>
+                        <a class="project-link">Link</a>
+                    </div>
+                    
+                </div>
+                <button id="next">&#8594;</button>
+            </div>
+        </section>
+
+        <section class="experiences">
+            <div class="experiences-title">Experiences</div>
+            <div class="experience">
+                <div class="experience-header">
                     <h3>Software Engineer | Google</h3>
-                    <h3>Jan 2023 - Feb 2024</h3>
+                    <h3>Jan 2023 - Feb 2024 </h3>
                 </div>
-
-                <p>
-                    Developed and maintained web applications using React and Node.js.
-                    <span>...</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam architecto odio assumenda cum ex corporis adipisci obcaecati error quibusdam, quae consequatur quam laudantium esse. Quo beatae quibusdam voluptate eveniet.</span>
+                <p>Developed and maintained web applications using React and Node.js<span class="ellipsis">...</span> <span class="hidden-text">Collaborated 
+                    with cross-functional teams to deliver high-quality products. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</span>
                 </p>
             </div>
-
-            <div>
-                <div>
+            <div class="experience">
+                <div class="experience-header">
                     <h3>Data Scientist | Microsoft</h3>
-                    <h3>March 2024 - Dec 2024</h3>
+                    <h3>Jan 2021 - Dec 2021</h3>
                 </div>
-                <p>
-                    Developed and maintained data applications using React and Node.js.
-                    <span>...</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam architecto odio assumenda cum ex corporis adipisci obcaecati error quibusdam, quae consequatur quam laudantium esse. Quo beatae quibusdam voluptate eveniet.</span>
-                </p>
+                <p>Analyzed large datasets to identify trends and insights<span class="ellipsis">...</span> <span class="hidden-text">Developed machine learning 
+                    models to solve business problems.</span></p>
             </div>
-            <div>
-                <div>
+            <div class="experience">
+                <div class="experience-header">
                     <h3>Web Developer | Amazon</h3>
-                    <h3>Jan 2025 - Present</h3>
+                    <h3>Mar 2020 - Jun 2020</h3>
                 </div>
-                <p>
-                    Developed and maintained data applications using React and Node.js.
-                    <span>...</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam architecto odio assumenda cum ex corporis adipisci obcaecati error quibusdam, quae consequatur quam laudantium esse. Quo beatae quibusdam voluptate eveniet.</span>
-                </p>
+                <p>Designed and implemented responsive websites using HTML, CSS, and JavaScript<span class="ellipsis">...</span> <span class="hidden-text">Worked with 
+                    clients to understand their needs and deliver custom solutions.</span></p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h3>Inquiries and Information</h3>
-        <p>Interest in my work? Here's more about me. Let's get connected</p>
+        <section>           
+            <div class="info-section-container">
+                <h3>Inquiries and Information</h3>
+                <p>Interested in my work? Here's more about me. Let's get connected!</p>
+                <div class="info-section-wrapper">
+                <div class="info-wrapper">
+                    <div class="question">
+                        <h4>Work and Skills</h4>
+                    </div>
+                    <div class="answer">
+                        <p>I specialize in Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam doloribus esse delectus adipisci voluptates. Eaque quae deserunt nulla? Vitae magni officia deserunt ipsa, nobis adipisci? Repudiandae sapiente beatae temporibus saepe.</p>
+                    </div>
+                </div>
 
-        <div>
+                <div class="info-wrapper">
+                    <div class="question">
+                        <h4>Preferred Method of Contact</h4>
+                    </div>
+                    <div class="answer">
+                        <p>For business inquiries, my email is Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempora provident excepturi nobis. Labore, nisi? Unde deserunt tenetur dignissimos sit repudiandae, temporibus aliquid laudantium rem vel, deleniti officia delectus obcaecati?</p>
+                    </div>
 
-            <div>
-                <div> <!-- Question Div-->
-                    <h4>Work and Skills</h4>
                 </div>
-                <div> <!-- Answer -->
-                    <p>I specialize in.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident odit autem, rem doloremque numquam quo minima voluptatum enim dicta neque voluptatem nam temporibus sit, possimus illum, perspiciatis obcaecati minus.</p>
+                <div class="info-wrapper">
+                    <div class="question">
+                        <h4>A Little About Me</h4>
+                    </div>
+                    <div class="answer">
+                        <p>I've gone snowboarding in 12 different countries over the past 5 years! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit magnam maxime iure labore odit cum velit soluta error nisi, nam inventore. Praesentium laborum culpa quibusdam, doloribus voluptates eius magnam?</p>
+                    </div>
                 </div>
-            </div>
-
-            <div>
-                <div> <!-- Question Div-->
-                    <h4>Preferred Method of Contact</h4>
-                </div>
-                <div> <!-- Answer -->
-                    <p>My business email is....Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident odit autem, rem doloremque numquam quo minima voluptatum enim dicta neque voluptatem nam temporibus sit, possimus illum, perspiciatis obcaecati minus.</p>
-                </div>
-            </div>
-
-            <div>
-                <div> <!-- Question Div-->
-                    <h4>A Little About Me</h4>
-                </div>
-                <div> <!-- Answer -->
-                    <p>I love snowboarding! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident odit autem, rem doloremque numquam quo minima voluptatum enim dicta neque voluptatem nam temporibus sit, possimus illum, perspiciatis obcaecati minus.</p>
                 </div>
             </div>
-            
-        </div>
+            <div class="form-container">
+                <form id="form">
 
-    </section>
+                </form>
 
-    <footer>
-        <div>
-            <p>&copy; 2025 Skyler Hall</p>
-            <a href="https://www.linkedin.com/in/roseline-damiscar/" target="_blank">LinkedIn</a>
-            <a href="">Github</a>
-            <a href="">Instagram</a>
-        </div>
-    </footer>
-
-  </div>
-
+            </div>
+        </section>
+          
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 (Insert First Name)</p>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+                <a href="https://github.com/">Github</a>
+                <a href="https://www.instagram.com/instagram/">Instagram</a>
+            </div>
+        </footer>
+        <script src="script.js" type="module"></script>
+    </div>
 </body>
 </html>
